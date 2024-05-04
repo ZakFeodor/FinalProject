@@ -1,0 +1,307 @@
+2024-05-04 19:08:33,033 FILE: connectionpool.py IN: _new_conn MESSAGE: Starting new HTTPS connection (1): llm.api.cloud.yandex.net:443
+2024-05-04 19:08:33,615 FILE: connectionpool.py IN: _make_request MESSAGE: https://llm.api.cloud.yandex.net:443 "POST /foundationModels/v1/tokenize HTTP/1.1" 200 None
+2024-05-04 19:08:33,617 FILE: connectionpool.py IN: _new_conn MESSAGE: Starting new HTTPS connection (1): api.telegram.org:443
+2024-05-04 19:08:34,221 FILE: connectionpool.py IN: _make_request MESSAGE: https://api.telegram.org:443 "GET /bot6477745890:AAF_w2lcFKp4COkkJasYBtOFACU0ZH72HGE/getMe HTTP/1.1" 200 231
+2024-05-04 19:08:34,223 FILE: connectionpool.py IN: _new_conn MESSAGE: Starting new HTTPS connection (1): api.telegram.org:443
+2024-05-04 19:08:34,816 FILE: connectionpool.py IN: _make_request MESSAGE: https://api.telegram.org:443 "GET /bot6477745890:AAF_w2lcFKp4COkkJasYBtOFACU0ZH72HGE/getUpdates?offset=1&timeout=20 HTTP/1.1" 200 400
+2024-05-04 19:08:34,818 FILE: usersdb.py IN: create_database_users MESSAGE: DATABASE: База данных создана
+2024-05-04 19:08:34,818 FILE: Bot.py IN: start MESSAGE: Обнаружение нового пользователя
+2024-05-04 19:08:34,820 FILE: connectionpool.py IN: _new_conn MESSAGE: Starting new HTTPS connection (1): api.telegram.org:443
+2024-05-04 19:08:35,567 FILE: connectionpool.py IN: _make_request MESSAGE: https://api.telegram.org:443 "POST /bot6477745890:AAF_w2lcFKp4COkkJasYBtOFACU0ZH72HGE/sendMessage?chat_id=1752643398&text=Choose+the+language&reply_markup=%7B%22keyboard%22%3A+%5B%5B%7B%22text%22%3A+%22English%22%7D%5D%2C+%5B%7B%22text%22%3A+%22O%27zbek+tili%22%7D%5D%2C+%5B%7B%22text%22%3A+%22%5Cu0420%5Cu0443%5Cu0441%5Cu0441%5Cu043a%5Cu0438%5Cu0439%22%7D%5D%2C+%5B%7B%22text%22%3A+%22%5Cu049a%5Cu0430%5Cu0437%5Cu0430%5Cu049b%5Cu0448%5Cu0430%22%7D%5D%2C+%5B%7B%22text%22%3A+%22Deutsch%22%7D%5D%2C+%5B%7B%22text%22%3A+%22%5Cu05e2%5Cu05d1%5Cu05e8%5Cu05d9%5Cu05ea%22%7D%5D%5D%2C+%22resize_keyboard%22%3A+true%7D HTTP/1.1" 200 288
+2024-05-04 19:08:39,241 FILE: connectionpool.py IN: _make_request MESSAGE: https://api.telegram.org:443 "GET /bot6477745890:AAF_w2lcFKp4COkkJasYBtOFACU0ZH72HGE/getUpdates?offset=467934118&timeout=20 HTTP/1.1" 200 343
+2024-05-04 19:08:39,241 FILE: Bot.py IN: get_lang MESSAGE: Обновлен язык
+2024-05-04 19:08:39,724 FILE: hpack.py IN: encode MESSAGE: HPACK encoding <generator object _check_path_header.<locals>.inner at 0x0000018295D7DD20>
+2024-05-04 19:08:39,725 FILE: hpack.py IN: add MESSAGE: Adding (b':method', b'POST') to the header table
+2024-05-04 19:08:39,725 FILE: hpack.py IN: encode_integer MESSAGE: Encoding 3 with 7 bits
+2024-05-04 19:08:39,725 FILE: hpack.py IN: add MESSAGE: Adding (b':authority', b'translate.google.com') to the header table
+2024-05-04 19:08:39,725 FILE: hpack.py IN: encode_integer MESSAGE: Encoding 1 with 6 bits
+2024-05-04 19:08:39,725 FILE: hpack.py IN: encode_integer MESSAGE: Encoding 14 with 7 bits
+2024-05-04 19:08:39,725 FILE: hpack.py IN: add MESSAGE: Adding (b':scheme', b'https') to the header table
+2024-05-04 19:08:39,725 FILE: hpack.py IN: encode_integer MESSAGE: Encoding 7 with 7 bits
+2024-05-04 19:08:39,725 FILE: hpack.py IN: add MESSAGE: Adding (b':path', b'/_/TranslateWebserverUi/data/batchexecute?rpcids=MkEWBc&bl=boq_translate-webserver_20201207.13_p0&soc-app=1&soc-platform=1&soc-device=1&rt=c') to the header table
+2024-05-04 19:08:39,725 FILE: hpack.py IN: encode_integer MESSAGE: Encoding 4 with 6 bits
+2024-05-04 19:08:39,725 FILE: hpack.py IN: encode_integer MESSAGE: Encoding 101 with 7 bits
+2024-05-04 19:08:39,725 FILE: hpack.py IN: add MESSAGE: Adding (b'accept', b'*/*') to the header table
+2024-05-04 19:08:39,725 FILE: hpack.py IN: encode_integer MESSAGE: Encoding 19 with 6 bits
+2024-05-04 19:08:39,725 FILE: hpack.py IN: encode_integer MESSAGE: Encoding 3 with 7 bits
+2024-05-04 19:08:39,725 FILE: hpack.py IN: add MESSAGE: Adding (b'accept-encoding', b'gzip, deflate') to the header table
+2024-05-04 19:08:39,725 FILE: hpack.py IN: encode_integer MESSAGE: Encoding 16 with 7 bits
+2024-05-04 19:08:39,725 FILE: hpack.py IN: add MESSAGE: Adding (b'user-agent', b'Mozilla/5.0 (Windows NT 10.0; Win64; x64)') to the header table
+2024-05-04 19:08:39,725 FILE: hpack.py IN: encode_integer MESSAGE: Encoding 58 with 6 bits
+2024-05-04 19:08:39,725 FILE: hpack.py IN: encode_integer MESSAGE: Encoding 32 with 7 bits
+2024-05-04 19:08:39,725 FILE: hpack.py IN: add MESSAGE: Adding (b'referer', b'https://translate.google.com') to the header table
+2024-05-04 19:08:39,725 FILE: hpack.py IN: encode_integer MESSAGE: Encoding 51 with 6 bits
+2024-05-04 19:08:39,725 FILE: hpack.py IN: encode_integer MESSAGE: Encoding 20 with 7 bits
+2024-05-04 19:08:39,725 FILE: hpack.py IN: add MESSAGE: Adding (b'content-length', b'585') to the header table
+2024-05-04 19:08:39,725 FILE: hpack.py IN: encode_integer MESSAGE: Encoding 28 with 6 bits
+2024-05-04 19:08:39,725 FILE: hpack.py IN: encode_integer MESSAGE: Encoding 3 with 7 bits
+2024-05-04 19:08:39,726 FILE: hpack.py IN: add MESSAGE: Adding (b'content-type', b'application/x-www-form-urlencoded') to the header table
+2024-05-04 19:08:39,726 FILE: hpack.py IN: encode_integer MESSAGE: Encoding 31 with 6 bits
+2024-05-04 19:08:39,726 FILE: hpack.py IN: encode_integer MESSAGE: Encoding 24 with 7 bits
+2024-05-04 19:08:39,726 FILE: hpack.py IN: encode MESSAGE: Encoded header block to b"\x83A\x8eM\x83\xa9\x14\r%^c\x9ej\n\xb9\x0fO\x87D\xe5b&7\xd8:\x91@\xd2^E\x8d\x05\xb3\xb9l\xe0f$\x1aF\xc4cI'/\x92\x92\xd4\x97\xfc\xb2\xb2\x1aDA\xa3\xae\x0eWI\xf1\x1d\x10F~\xd1&\xc1\xd4\x8a\x06\x92\xad\xe0\xb1\xa0\xb6w-\x91\x08\x02\x00D\x07W\x0b1V\x0f\x84\x1c\x8b\x0e\xba\xe0\x0f\xc2\x0eE\xab\xa0i\x94\xf6S\x00~\x10r-!{\x98\x85\x80?\x16&\x02\x7fS\x83\xf9c\xe7\x90z\xa0\xd0\x7ff\xa2\x81\xb0\xda\xe0S\xfa\xe4j\xa4?\x84)\xa7z\x81\x02\xe0\xfbS\x91\xaaq\xaf\xb5<\xb8\xd7\xf7s\x94\x9d)\xad\x17\x18a6\x0e\xa4P4\x95y\x8ey\xa8*\xe4=?\\\x83m\xe6\xff_\x98\x1du\xd0b\r&=Ly[\xc7\x8f\x0bJ{)Z\xdb(-D<\x85\x93"
+2024-05-04 19:08:39,901 FILE: hpack.py IN: decode MESSAGE: Decoding b'\x88_\x96\x1du\xd0b\r&=LtA\xea\xfbP\x93\x8e\xc4\x150Z\x99V{X\xa1\xa8\xeb\x10d\x9c\xbfJTu\x90\x93\xd8_\xa5)\x1f\x95\x871`\x07\xd2\x94\xda\x84\xada{\x8e\x83H4\x97@\x85\xae\xc1\xcdH\xff\x86\xa8\xeb\x10d\x9c\xbfd\x96\xd0z\xbe\x94\x00T\xca:\x94\x0b\xef\x81@\x02\xe0\x01p\x00S\x16\x8d\xff\x0f\x12\x96\xdc4\xfd(\x06\x94\xd0?J\x08\x02i@\xb9p\x0f\\e\xf51h\xdfY\xb2\x1aR2OIjO\xda\x92\x9a\x82\xd4:K\x07\xf3aQY\xeaAW\x8c\xd5\x7f?jJj\x0bP\xe9/\xcc\x1c7\xe1Y\xef\xf5\xfe\xac*+=H*\xf1\x9a\xaf@\x90\xf2\xb1\x0fRKRVO\xaa\xca\xb1\xebI\x8fR?\x85\xa8\xe8\xa8\xd2\xcb@\x03p3p\xaf\xbd\xae\x0f\xe7|\xe6B\x86B\x95\x1d*\rMl\xebR\xb3\xd0bz\xfe\x14\xdcR\xa92\xe4;\x15\xb3\\\xe5\xa2\xb5%=\x8aR{\n\xa1\xaa\x94\xeb\xff?@\x86\x19\x08Z\xd2\xb1\'\xff\x12\xdcR-{\x1a\xdc!Z\x1b\t?\xd2\x9b\x8aE\xafc[\x84+]2j*\x11\xf4\xa6\xe2\x91k\xd8\xd6\xe1\n\xd8m\xa2\x85\xb8\x96\xc4\x18\xf5})\xb8\xa4Z\xf65\xb8B\xb6\x1bh\xa1n%\xb1\x06=Kg2\x13\xf4\xa6\xe2\x91k\xd8\xd6\xe1\n\xda\x0f!h\xfaSqH\xb5\xeckp\x85nG\xe4\xe3_Jn)\x16\xbd\x8dn\x10\xad\x84\xf6R\xb6\x11\x91\'\xb3\xe9M\xc5"\xd7\xb1\xad\xc2\x15\xb5\xd04\xca{)\xfaSqH\xb5\xeckp\x85mt\r2\x9e\xcaV\xe2[\x10c\xd5@\x94%\x87B\x16=\x86\x98\xd5-aP{l!V\xac\xf4\x18\x9e\xbf\x86@\xe9*\xc82K@\x90!\xeaIjJ\xc8)-\xb0\xc9\xf4\xb5g\xa0\xc4\xf5\xba\xb0\xbd\xad5\x85Y6Z\x84\x96E\x93\xea\xb2\xa1iOb\x9f\xe9\x04\xb0\xd5\xa7\xfd}\xd8Z\xcfbV\xb6\xc3(\xc4Lo\xb0u"\x81\xa4\xbc\x8b\x1a\x0bgr\xd9\xc0\xcc\x11\x15\xd8Z\xcfb\x7f@\x92%\x87B\x16=\x86\x98\xd5,z\xcbQlZ\xb3\xd0bz\x91@\xe9*\xc7\xb0\xd3\x1a\xa5\x87E\x07\xf0\xb5g\xae\xda\xd1@\x8d\xac\xb6Rd \xc7\xa9\x0bVz\x0cO_\xff\x01$\xebZ5\x87a\'\x83\xe7\xe9BN\xb5\xa3Z3&\xa2\xa1\x10|\xfd(I\xd6\xb4kKm\x14-\xdc\xb6 \xc7\xaa\x0f\x9f\xa5\t:\xd6\x8dim\xa2\x85\xbb\x96\xc4\x18\xf5-A\x90\x98>~\x94$\xebZ5\xa9<\x85\xa2\x0f\x9f\xa5\t:\xd6\x8do\x07\xf0\xe3P|\xfd(I\xd6\xb4kJ{)ZQ\x91\'\xb2\x0f\x9f\xa5\t:\xd6\x8dj\xe8\x1ae=\x94\xc1\xf3\xf4\xa1\'Z\xd1\xad]\x03L\xa7\xb2\x95\xbb\x96\xc4\x18\xf5A\xf3v\x03ESF@\x8c\xf2\xb7\x94!j\xec:JD\x98\xf5\x7f\x010@\x8b\xf2\xb4\xb6\x0e\x92\xacz\xd2c\xd4\x8f\x89\xdd\x0e\x8c\x1a\xb6\xe4\xc5\x93O\x0f(\xffJ\xd3\x92\xfc\r\x85\x98(\xe9v\xec^\xb7E\xbe\xb2kC]\xb7\xf8v\xb4:\xd6H\xf7\xd7\xe3c\xfe:wMI\xa7\xcc\xf8Eg\xad\x8fm\x1f\xee\x9a2\xdd?\x1f5\xdf\xb6\xdc<\xb7U\xcb#1\xd7f\xd95\x14mi\xce\xef\\o\xde\xd1W.\x97\xb5w\xbb\xe9\xaczq\x9e\xbc\x1d3\xb3\xa0X\xabY\xf7\'\xa7\xcf\x87m\xbf\xb4\xd97]\xbf2j\xdd\xbcP\xef\xf4\x01a\x89\xf8]\x97\xd7\x86^Ga\xf3\xb4\xec\xec\x07gZ6\xee\xfcvK\xc2>\x7f\x99\xf3\xb3\x83l^0}\xa8_5\x9a\xc2\xa2\r\xd6\xd5\xf4\xa0\x19[I\xfb\xac \t\xa5\x02\xe5\xc0=q\x97\xd4\xc5\xa3\x7f\xda\x95\x8d3\xc0\xc7\xda\x92\x1e\x91\x9a\xa8\x17\x98\xe7\x9a\x82\xaeC\xd3\xf6\xa64\xa6\xbdUQ\xeb@\x85\x1d\tY\x1d\xc9\xa4\x9d\x98?\x9b\x8d4\xcf\xf3\xf6\xa5#\x80M\xbe \x00\x1fS\xb2\xb0\x9f\x83\xf9\xb8\xd3L\xff?jR8\x04\xdb\xe2\x00\x01R\x83\xa8\xf5\x17{\xad\xdcR-\x84\xa9$\xeb_*\x13\xf4\xa6\xe2\x91l%I\'[A\xe4/\xd2\x9b\x8aE\xb0\x95$\x9dm\xc6I~\xa1!\x0bZV\xc1Q\x0f!\xaa\x9b'
+2024-05-04 19:08:39,901 FILE: hpack.py IN: decode_integer MESSAGE: Decoded 8, consumed 1 bytes
+2024-05-04 19:08:39,901 FILE: hpack.py IN: _decode_indexed MESSAGE: Decoded (b':status', b'200'), consumed 1
+2024-05-04 19:08:39,902 FILE: hpack.py IN: decode_integer MESSAGE: Decoded 31, consumed 1 bytes
+2024-05-04 19:08:39,902 FILE: hpack.py IN: decode_integer MESSAGE: Decoded 22, consumed 1 bytes
+2024-05-04 19:08:39,902 FILE: hpack.py IN: _decode_literal MESSAGE: Decoded (b'content-type', b'application/json; charset=utf-8'), total consumed 24 bytes, indexed True
+2024-05-04 19:08:39,902 FILE: hpack.py IN: decode_integer MESSAGE: Decoded 24, consumed 1 bytes
+2024-05-04 19:08:39,902 FILE: hpack.py IN: decode_integer MESSAGE: Decoded 33, consumed 1 bytes
+2024-05-04 19:08:39,902 FILE: hpack.py IN: _decode_literal MESSAGE: Decoded (b'cache-control', b'no-cache, no-store, max-age=0, must-revalidate'), total consumed 35 bytes, indexed True
+2024-05-04 19:08:39,902 FILE: hpack.py IN: decode_integer MESSAGE: Decoded 5, consumed 1 bytes
+2024-05-04 19:08:39,902 FILE: hpack.py IN: decode_integer MESSAGE: Decoded 6, consumed 1 bytes
+2024-05-04 19:08:39,902 FILE: hpack.py IN: _decode_literal MESSAGE: Decoded (b'pragma', b'no-cache'), total consumed 14 bytes, indexed True
+2024-05-04 19:08:39,902 FILE: hpack.py IN: decode_integer MESSAGE: Decoded 36, consumed 1 bytes
+2024-05-04 19:08:39,902 FILE: hpack.py IN: decode_integer MESSAGE: Decoded 22, consumed 1 bytes
+2024-05-04 19:08:39,902 FILE: hpack.py IN: _decode_literal MESSAGE: Decoded (b'expires', b'Mon, 01 Jan 1990 00:00:00 GMT'), total consumed 24 bytes, indexed True
+2024-05-04 19:08:39,902 FILE: hpack.py IN: decode_integer MESSAGE: Decoded 33, consumed 2 bytes
+2024-05-04 19:08:39,902 FILE: hpack.py IN: decode_integer MESSAGE: Decoded 22, consumed 1 bytes
+2024-05-04 19:08:39,902 FILE: hpack.py IN: _decode_literal MESSAGE: Decoded (b'date', b'Sat, 04 May 2024 16:08:39 GMT'), total consumed 25 bytes, indexed False
+2024-05-04 19:08:39,902 FILE: hpack.py IN: decode_integer MESSAGE: Decoded 25, consumed 1 bytes
+2024-05-04 19:08:39,902 FILE: hpack.py IN: decode_integer MESSAGE: Decoded 50, consumed 1 bytes
+2024-05-04 19:08:39,902 FILE: hpack.py IN: _decode_literal MESSAGE: Decoded (b'content-disposition', b'attachment; filename="response.bin"; filename*=UTF-8\'\'response.bin'), total consumed 52 bytes, indexed True
+2024-05-04 19:08:39,902 FILE: hpack.py IN: decode_integer MESSAGE: Decoded 16, consumed 1 bytes
+2024-05-04 19:08:39,902 FILE: hpack.py IN: decode_integer MESSAGE: Decoded 5, consumed 1 bytes
+2024-05-04 19:08:39,902 FILE: hpack.py IN: _decode_literal MESSAGE: Decoded (b'x-content-type-options', b'nosniff'), total consumed 24 bytes, indexed True
+2024-05-04 19:08:39,902 FILE: hpack.py IN: decode_integer MESSAGE: Decoded 3, consumed 1 bytes
+2024-05-04 19:08:39,903 FILE: hpack.py IN: decode_integer MESSAGE: Decoded 47, consumed 1 bytes
+2024-05-04 19:08:39,903 FILE: hpack.py IN: _decode_literal MESSAGE: Decoded (<memory at 0x0000018295D0E8C0>, b'CP="This is not a P3P policy! See g.co/p3phelp for more info."'), total consumed 53 bytes, indexed True
+2024-05-04 19:08:39,903 FILE: hpack.py IN: decode_integer MESSAGE: Decoded 6, consumed 1 bytes
+2024-05-04 19:08:39,903 FILE: hpack.py IN: decode_integer MESSAGE: Decoded 145, consumed 2 bytes
+2024-05-04 19:08:39,903 FILE: hpack.py IN: _decode_literal MESSAGE: Decoded (b'accept-ch', b'Sec-CH-UA-Arch, Sec-CH-UA-Bitness, Sec-CH-UA-Full-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Model, Sec-CH-UA-WoW64, Sec-CH-UA-Form-Factor, Sec-CH-UA-Platform, Sec-CH-UA-Platform-Version'), total consumed 155 bytes, indexed True
+2024-05-04 19:08:39,903 FILE: hpack.py IN: decode_integer MESSAGE: Decoded 20, consumed 1 bytes
+2024-05-04 19:08:39,903 FILE: hpack.py IN: decode_integer MESSAGE: Decoded 6, consumed 1 bytes
+2024-05-04 19:08:39,903 FILE: hpack.py IN: _decode_literal MESSAGE: Decoded (b'cross-origin-resource-policy', b'same-site'), total consumed 29 bytes, indexed True
+2024-05-04 19:08:39,903 FILE: hpack.py IN: decode_integer MESSAGE: Decoded 16, consumed 1 bytes
+2024-05-04 19:08:39,903 FILE: hpack.py IN: decode_integer MESSAGE: Decoded 58, consumed 1 bytes
+2024-05-04 19:08:39,903 FILE: hpack.py IN: _decode_literal MESSAGE: Decoded (b'content-security-policy', b"require-trusted-types-for 'script';report-uri /_/TranslateWebserverUi/cspreport"), total consumed 77 bytes, indexed True
+2024-05-04 19:08:39,903 FILE: hpack.py IN: decode_integer MESSAGE: Decoded 18, consumed 1 bytes
+2024-05-04 19:08:39,903 FILE: hpack.py IN: decode_integer MESSAGE: Decoded 17, consumed 1 bytes
+2024-05-04 19:08:39,903 FILE: hpack.py IN: _decode_literal MESSAGE: Decoded (b'cross-origin-opener-policy', b'same-origin-allow-popups'), total consumed 38 bytes, indexed True
+2024-05-04 19:08:39,903 FILE: hpack.py IN: decode_integer MESSAGE: Decoded 13, consumed 1 bytes
+2024-05-04 19:08:39,903 FILE: hpack.py IN: decode_integer MESSAGE: Decoded 128, consumed 2 bytes
+2024-05-04 19:08:39,903 FILE: hpack.py IN: _decode_literal MESSAGE: Decoded (b'permissions-policy', b'ch-ua-arch=*, ch-ua-bitness=*, ch-ua-full-version=*, ch-ua-full-version-list=*, ch-ua-model=*, ch-ua-wow64=*, ch-ua-form-factor=*, ch-ua-platform=*, ch-ua-platform-version=*'), total consumed 145 bytes, indexed True
+2024-05-04 19:08:39,903 FILE: hpack.py IN: decode_integer MESSAGE: Decoded 54, consumed 1 bytes
+2024-05-04 19:08:39,903 FILE: hpack.py IN: decode_integer MESSAGE: Decoded 3, consumed 1 bytes
+2024-05-04 19:08:39,903 FILE: hpack.py IN: _decode_literal MESSAGE: Decoded (b'server', <memory at 0x0000018295D0E980>), total consumed 5 bytes, indexed True
+2024-05-04 19:08:39,903 FILE: hpack.py IN: decode_integer MESSAGE: Decoded 12, consumed 1 bytes
+2024-05-04 19:08:39,903 FILE: hpack.py IN: decode_integer MESSAGE: Decoded 1, consumed 1 bytes
+2024-05-04 19:08:39,903 FILE: hpack.py IN: _decode_literal MESSAGE: Decoded (b'x-xss-protection', <memory at 0x0000018295D0E800>), total consumed 16 bytes, indexed True
+2024-05-04 19:08:39,903 FILE: hpack.py IN: decode_integer MESSAGE: Decoded 11, consumed 1 bytes
+2024-05-04 19:08:39,903 FILE: hpack.py IN: decode_integer MESSAGE: Decoded 9, consumed 1 bytes
+2024-05-04 19:08:39,903 FILE: hpack.py IN: _decode_literal MESSAGE: Decoded (b'x-frame-options', b'SAMEORIGIN'), total consumed 23 bytes, indexed True
+2024-05-04 19:08:39,903 FILE: hpack.py IN: decode_integer MESSAGE: Decoded 55, consumed 2 bytes
+2024-05-04 19:08:39,903 FILE: hpack.py IN: decode_integer MESSAGE: Decoded 201, consumed 2 bytes
+2024-05-04 19:08:39,904 FILE: hpack.py IN: _decode_literal MESSAGE: Decoded (b'set-cookie', b'NID=513=ljBB_yS_TpcPs4qTw7ps74IbTpwQ9wjvtntmxhF2ryQ8RaZNlJBoVxpDuuFWSnWI3bprRdOea4NL7kH9CMnWjCOvBy4HNHopEjL3M2Gp-96hmxw7uDRiISBDgtnST2ATy02F_9A7fyw38sqaYuo3Q0q74iSvVQfUbYXLL3ER_wE; expires=Sun, 03-Nov-2024 16:08:39 GMT; path=/; domain=.google.com; HttpOnly'), total consumed 205 bytes, indexed False
+2024-05-04 19:08:39,904 FILE: hpack.py IN: decode_integer MESSAGE: Decoded 5, consumed 1 bytes
+2024-05-04 19:08:39,904 FILE: hpack.py IN: decode_integer MESSAGE: Decoded 36, consumed 1 bytes
+2024-05-04 19:08:39,904 FILE: hpack.py IN: _decode_literal MESSAGE: Decoded (b'alt-svc', b'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'), total consumed 44 bytes, indexed True
+2024-05-04 19:08:39,904 FILE: hpack.py IN: decode_integer MESSAGE: Decoded 18, consumed 1 bytes
+2024-05-04 19:08:39,904 FILE: hpack.py IN: decode_integer MESSAGE: Decoded 3, consumed 1 bytes
+2024-05-04 19:08:39,904 FILE: hpack.py IN: _decode_literal MESSAGE: Decoded (b'accept-ranges', b'none'), total consumed 5 bytes, indexed True
+2024-05-04 19:08:39,904 FILE: hpack.py IN: decode_integer MESSAGE: Decoded 59, consumed 1 bytes
+2024-05-04 19:08:39,904 FILE: hpack.py IN: decode_integer MESSAGE: Decoded 45, consumed 1 bytes
+2024-05-04 19:08:39,904 FILE: hpack.py IN: _decode_literal MESSAGE: Decoded (b'vary', b'Sec-Fetch-Dest, Sec-Fetch-Mode, Sec-Fetch-Site,Accept-Encoding'), total consumed 47 bytes, indexed True
+2024-05-04 19:08:39,904 FILE: _client.py IN: send_single_request MESSAGE: HTTP Request: POST https://translate.google.com/_/TranslateWebserverUi/data/batchexecute?rpcids=MkEWBc&bl=boq_translate-webserver_20201207.13_p0&soc-app=1&soc-platform=1&soc-device=1&rt=c "HTTP/2 200 OK"
+2024-05-04 19:08:40,139 FILE: connectionpool.py IN: _make_request MESSAGE: https://api.telegram.org:443 "POST /bot6477745890:AAF_w2lcFKp4COkkJasYBtOFACU0ZH72HGE/sendMessage?chat_id=1752643398&text=Choose+the+preferred+GPT+model+answers+format&reply_markup=%7B%22keyboard%22%3A+%5B%5B%7B%22text%22%3A+%22Audio%22%7D%5D%2C+%5B%7B%22text%22%3A+%22Text%22%7D%5D%5D%2C+%22resize_keyboard%22%3A+true%7D HTTP/1.1" 200 314
+2024-05-04 19:08:47,298 FILE: connectionpool.py IN: _make_request MESSAGE: https://api.telegram.org:443 "GET /bot6477745890:AAF_w2lcFKp4COkkJasYBtOFACU0ZH72HGE/getUpdates?offset=467934119&timeout=20 HTTP/1.1" 200 340
+2024-05-04 19:08:47,304 FILE: usersdb.py IN: update_settings MESSAGE: DATABASE: UPDATE INTO users VALUES (en, Text)
+2024-05-04 19:08:47,762 FILE: hpack.py IN: encode MESSAGE: HPACK encoding <generator object _check_path_header.<locals>.inner at 0x0000018295D7E180>
+2024-05-04 19:08:47,762 FILE: hpack.py IN: add MESSAGE: Adding (b':method', b'POST') to the header table
+2024-05-04 19:08:47,762 FILE: hpack.py IN: encode_integer MESSAGE: Encoding 3 with 7 bits
+2024-05-04 19:08:47,762 FILE: hpack.py IN: add MESSAGE: Adding (b':authority', b'translate.google.com') to the header table
+2024-05-04 19:08:47,762 FILE: hpack.py IN: encode_integer MESSAGE: Encoding 1 with 6 bits
+2024-05-04 19:08:47,762 FILE: hpack.py IN: encode_integer MESSAGE: Encoding 14 with 7 bits
+2024-05-04 19:08:47,762 FILE: hpack.py IN: add MESSAGE: Adding (b':scheme', b'https') to the header table
+2024-05-04 19:08:47,762 FILE: hpack.py IN: encode_integer MESSAGE: Encoding 7 with 7 bits
+2024-05-04 19:08:47,762 FILE: hpack.py IN: add MESSAGE: Adding (b':path', b'/_/TranslateWebserverUi/data/batchexecute?rpcids=MkEWBc&bl=boq_translate-webserver_20201207.13_p0&soc-app=1&soc-platform=1&soc-device=1&rt=c') to the header table
+2024-05-04 19:08:47,762 FILE: hpack.py IN: encode_integer MESSAGE: Encoding 4 with 6 bits
+2024-05-04 19:08:47,762 FILE: hpack.py IN: encode_integer MESSAGE: Encoding 101 with 7 bits
+2024-05-04 19:08:47,762 FILE: hpack.py IN: add MESSAGE: Adding (b'accept', b'*/*') to the header table
+2024-05-04 19:08:47,762 FILE: hpack.py IN: encode_integer MESSAGE: Encoding 19 with 6 bits
+2024-05-04 19:08:47,763 FILE: hpack.py IN: encode_integer MESSAGE: Encoding 3 with 7 bits
+2024-05-04 19:08:47,763 FILE: hpack.py IN: add MESSAGE: Adding (b'accept-encoding', b'gzip, deflate') to the header table
+2024-05-04 19:08:47,763 FILE: hpack.py IN: encode_integer MESSAGE: Encoding 16 with 7 bits
+2024-05-04 19:08:47,763 FILE: hpack.py IN: add MESSAGE: Adding (b'user-agent', b'Mozilla/5.0 (Windows NT 10.0; Win64; x64)') to the header table
+2024-05-04 19:08:47,763 FILE: hpack.py IN: encode_integer MESSAGE: Encoding 58 with 6 bits
+2024-05-04 19:08:47,763 FILE: hpack.py IN: encode_integer MESSAGE: Encoding 32 with 7 bits
+2024-05-04 19:08:47,763 FILE: hpack.py IN: add MESSAGE: Adding (b'referer', b'https://translate.google.com') to the header table
+2024-05-04 19:08:47,763 FILE: hpack.py IN: encode_integer MESSAGE: Encoding 51 with 6 bits
+2024-05-04 19:08:47,763 FILE: hpack.py IN: encode_integer MESSAGE: Encoding 20 with 7 bits
+2024-05-04 19:08:47,763 FILE: hpack.py IN: add MESSAGE: Adding (b'content-length', b'780') to the header table
+2024-05-04 19:08:47,763 FILE: hpack.py IN: encode_integer MESSAGE: Encoding 28 with 6 bits
+2024-05-04 19:08:47,763 FILE: hpack.py IN: encode_integer MESSAGE: Encoding 3 with 7 bits
+2024-05-04 19:08:47,763 FILE: hpack.py IN: add MESSAGE: Adding (b'content-type', b'application/x-www-form-urlencoded') to the header table
+2024-05-04 19:08:47,763 FILE: hpack.py IN: encode_integer MESSAGE: Encoding 31 with 6 bits
+2024-05-04 19:08:47,763 FILE: hpack.py IN: encode_integer MESSAGE: Encoding 24 with 7 bits
+2024-05-04 19:08:47,763 FILE: hpack.py IN: encode MESSAGE: Encoded header block to b"\x83A\x8eM\x83\xa9\x14\r%^c\x9ej\n\xb9\x0fO\x87D\xe5b&7\xd8:\x91@\xd2^E\x8d\x05\xb3\xb9l\xe0f$\x1aF\xc4cI'/\x92\x92\xd4\x97\xfc\xb2\xb2\x1aDA\xa3\xae\x0eWI\xf1\x1d\x10F~\xd1&\xc1\xd4\x8a\x06\x92\xad\xe0\xb1\xa0\xb6w-\x91\x08\x02\x00D\x07W\x0b1V\x0f\x84\x1c\x8b\x0e\xba\xe0\x0f\xc2\x0eE\xab\xa0i\x94\xf6S\x00~\x10r-!{\x98\x85\x80?\x16&\x02\x7fS\x83\xf9c\xe7\x90z\xa0\xd0\x7ff\xa2\x81\xb0\xda\xe0S\xfa\xe4j\xa4?\x84)\xa7z\x81\x02\xe0\xfbS\x91\xaaq\xaf\xb5<\xb8\xd7\xf7s\x94\x9d)\xad\x17\x18a6\x0e\xa4P4\x95y\x8ey\xa8*\xe4=?\\\x83u\xe0\x7f_\x98\x1du\xd0b\r&=Ly[\xc7\x8f\x0bJ{)Z\xdb(-D<\x85\x93"
+2024-05-04 19:08:48,707 FILE: hpack.py IN: decode MESSAGE: Decoding b'\x88_\x96\x1du\xd0b\r&=LtA\xea\xfbP\x93\x8e\xc4\x150Z\x99V{X\xa1\xa8\xeb\x10d\x9c\xbfJTu\x90\x93\xd8_\xa5)\x1f\x95\x871`\x07\xd2\x94\xda\x84\xada{\x8e\x83H4\x97@\x85\xae\xc1\xcdH\xff\x86\xa8\xeb\x10d\x9c\xbfd\x96\xd0z\xbe\x94\x00T\xca:\x94\x0b\xef\x81@\x02\xe0\x01p\x00S\x16\x8d\xff\x0f\x12\x96\xdc4\xfd(\x06\x94\xd0?J\x08\x02i@\xb9p\x0f\\i\xd51h\xdfY\xb2\x1aR2OIjO\xda\x92\x9a\x82\xd4:K\x07\xf3aQY\xeaAW\x8c\xd5\x7f?jJj\x0bP\xe9/\xcc\x1c7\xe1Y\xef\xf5\xfe\xac*+=H*\xf1\x9a\xaf@\x90\xf2\xb1\x0fRKRVO\xaa\xca\xb1\xebI\x8fR?\x85\xa8\xe8\xa8\xd2\xcb@\x03p3p\xaf\xbd\xae\x0f\xe7|\xe6B\x86B\x95\x1d*\rMl\xebR\xb3\xd0bz\xfe\x14\xdcR\xa92\xe4;\x15\xb3\\\xe5\xa2\xb5%=\x8aR{\n\xa1\xaa\x94\xeb\xff?@\x92%\x87B\x16=\x86\x98\xd5,z\xcbQlZ\xb3\xd0bz\x91@\xe9*\xc7\xb0\xd3\x1a\xa5\x87E\x07\xf0\xb5g\xae\xda\xd1@\x8d\xac\xb6Rd \xc7\xa9\x0bVz\x0cO_\xff\x01$\xebZ5\x87a\'\x83\xe7\xe9BN\xb5\xa3Z3&\xa2\xa1\x10|\xfd(I\xd6\xb4kKm\x14-\xdc\xb6 \xc7\xaa\x0f\x9f\xa5\t:\xd6\x8dim\xa2\x85\xbb\x96\xc4\x18\xf5-A\x90\x98>~\x94$\xebZ5\xa9<\x85\xa2\x0f\x9f\xa5\t:\xd6\x8do\x07\xf0\xe3P|\xfd(I\xd6\xb4kJ{)ZQ\x91\'\xb2\x0f\x9f\xa5\t:\xd6\x8dj\xe8\x1ae=\x94\xc1\xf3\xf4\xa1\'Z\xd1\xad]\x03L\xa7\xb2\x95\xbb\x96\xc4\x18\xf5A\xf3@\x90!\xeaIjJ\xc8)-\xb0\xc9\xf4\xb5g\xa0\xc4\xf5\xba\xb0\xbd\xad5\x85Y6Z\x84\x96E\x93\xea\xb2\xa1iOb\x9f\xe9\x04\xb0\xd5\xa7\xfd}\xd8Z\xcfbV\xb6\xc3(\xc4Lo\xb0u"\x81\xa4\xbc\x8b\x1a\x0bgr\xd9\xc0\xcc\x11\x15\xd8Z\xcfb\x7f@\x94%\x87B\x16=\x86\x98\xd5-aP{l!V\xac\xf4\x18\x9e\xbf\x86@\xe9*\xc82K@\x86\x19\x08Z\xd2\xb1\'\xff\x12\xdcR-{\x1a\xdc!Z\x1b\t?\xd2\x9b\x8aE\xafc[\x84+]2j*\x11\xf4\xa6\xe2\x91k\xd8\xd6\xe1\n\xd8m\xa2\x85\xb8\x96\xc4\x18\xf5})\xb8\xa4Z\xf65\xb8B\xb6\x1bh\xa1n%\xb1\x06=Kg2\x13\xf4\xa6\xe2\x91k\xd8\xd6\xe1\n\xda\x0f!h\xfaSqH\xb5\xeckp\x85nG\xe4\xe3_Jn)\x16\xbd\x8dn\x10\xad\x84\xf6R\xb6\x11\x91\'\xb3\xe9M\xc5"\xd7\xb1\xad\xc2\x15\xb5\xd04\xca{)\xfaSqH\xb5\xeckp\x85mt\r2\x9e\xcaV\xe2[\x10c\xd5v\x03ESF@\x8c\xf2\xb7\x94!j\xec:JD\x98\xf5\x7f\x010@\x8b\xf2\xb4\xb6\x0e\x92\xacz\xd2c\xd4\x8f\x89\xdd\x0e\x8c\x1a\xb6\xe4\xc5\x93O\x0f(\xffJ\xd3\x92\xfc\r\x85\x98#\x91\xac\xc9Y\x9e\x8fx\xc15\xf6\xb2\xe4\xee\x1blo\xf7O\xefL<\xeb\xaf\xa6\xd8\xb2O\xd0\xb0\xf8\xf7wE\xdf1q\xc0\xef\xe4\xbe\x9b\xa97w\xf0\xe7AO\x9b\xce\x16\x9e\xe1\xc9>w\xa7-\xff=\xf2p\xe1\xc2\xb1\x97~\xb2\x80\x12\xea\x1a0a\r\x97\xb7#?7y\xb6\xd6_\xc6\x9f\xde!\xdf\xde\xe2\x1e\xd1\x16\xc9\x1b\xdal\x1c)\xc9\xdf%\x1a\x1c\xf3\xf9\xcb6\xacq?w}\x99w:/u\xdf\xd0\xd52\x1b\xdey\x89\x95!4Rb\xd6\x0c\xdb6}\xa8_5\x9a\xc2\xa2\r\xd6\xd5\xf4\xa0\x19[I\xfb\xac \t\xa5\x02\xe5\xc0=q\xa7T\xc5\xa3\x7f\xda\x95\x8d3\xc0\xc7\xda\x92\x1e\x91\x9a\xa8\x17\x98\xe7\x9a\x82\xaeC\xd3\xf6\xa64\xa6\xbdUQ\xeb@\x85\x1d\tY\x1d\xc9\xa4\x9d\x98?\x9b\x8d4\xcf\xf3\xf6\xa5#\x80M\xbe \x00\x1fS\xb2\xb0\x9f\x83\xf9\xb8\xd3L\xff?jR8\x04\xdb\xe2\x00\x01R\x83\xa8\xf5\x17{\xad\xdcR-\x84\xa9$\xeb_*\x13\xf4\xa6\xe2\x91l%I\'[A\xe4/\xd2\x9b\x8aE\xb0\x95$\x9dm\xc6I~\xa1!\x0bZV\xc1Q\x0f!\xaa\x9b'
+2024-05-04 19:08:48,707 FILE: hpack.py IN: decode_integer MESSAGE: Decoded 8, consumed 1 bytes
+2024-05-04 19:08:48,707 FILE: hpack.py IN: _decode_indexed MESSAGE: Decoded (b':status', b'200'), consumed 1
+2024-05-04 19:08:48,707 FILE: hpack.py IN: decode_integer MESSAGE: Decoded 31, consumed 1 bytes
+2024-05-04 19:08:48,707 FILE: hpack.py IN: decode_integer MESSAGE: Decoded 22, consumed 1 bytes
+2024-05-04 19:08:48,707 FILE: hpack.py IN: _decode_literal MESSAGE: Decoded (b'content-type', b'application/json; charset=utf-8'), total consumed 24 bytes, indexed True
+2024-05-04 19:08:48,707 FILE: hpack.py IN: decode_integer MESSAGE: Decoded 24, consumed 1 bytes
+2024-05-04 19:08:48,707 FILE: hpack.py IN: decode_integer MESSAGE: Decoded 33, consumed 1 bytes
+2024-05-04 19:08:48,707 FILE: hpack.py IN: _decode_literal MESSAGE: Decoded (b'cache-control', b'no-cache, no-store, max-age=0, must-revalidate'), total consumed 35 bytes, indexed True
+2024-05-04 19:08:48,707 FILE: hpack.py IN: decode_integer MESSAGE: Decoded 5, consumed 1 bytes
+2024-05-04 19:08:48,707 FILE: hpack.py IN: decode_integer MESSAGE: Decoded 6, consumed 1 bytes
+2024-05-04 19:08:48,707 FILE: hpack.py IN: _decode_literal MESSAGE: Decoded (b'pragma', b'no-cache'), total consumed 14 bytes, indexed True
+2024-05-04 19:08:48,708 FILE: hpack.py IN: decode_integer MESSAGE: Decoded 36, consumed 1 bytes
+2024-05-04 19:08:48,708 FILE: hpack.py IN: decode_integer MESSAGE: Decoded 22, consumed 1 bytes
+2024-05-04 19:08:48,708 FILE: hpack.py IN: _decode_literal MESSAGE: Decoded (b'expires', b'Mon, 01 Jan 1990 00:00:00 GMT'), total consumed 24 bytes, indexed True
+2024-05-04 19:08:48,708 FILE: hpack.py IN: decode_integer MESSAGE: Decoded 33, consumed 2 bytes
+2024-05-04 19:08:48,708 FILE: hpack.py IN: decode_integer MESSAGE: Decoded 22, consumed 1 bytes
+2024-05-04 19:08:48,708 FILE: hpack.py IN: _decode_literal MESSAGE: Decoded (b'date', b'Sat, 04 May 2024 16:08:47 GMT'), total consumed 25 bytes, indexed False
+2024-05-04 19:08:48,708 FILE: hpack.py IN: decode_integer MESSAGE: Decoded 25, consumed 1 bytes
+2024-05-04 19:08:48,708 FILE: hpack.py IN: decode_integer MESSAGE: Decoded 50, consumed 1 bytes
+2024-05-04 19:08:48,708 FILE: hpack.py IN: _decode_literal MESSAGE: Decoded (b'content-disposition', b'attachment; filename="response.bin"; filename*=UTF-8\'\'response.bin'), total consumed 52 bytes, indexed True
+2024-05-04 19:08:48,708 FILE: hpack.py IN: decode_integer MESSAGE: Decoded 16, consumed 1 bytes
+2024-05-04 19:08:48,708 FILE: hpack.py IN: decode_integer MESSAGE: Decoded 5, consumed 1 bytes
+2024-05-04 19:08:48,708 FILE: hpack.py IN: _decode_literal MESSAGE: Decoded (b'x-content-type-options', b'nosniff'), total consumed 24 bytes, indexed True
+2024-05-04 19:08:48,708 FILE: hpack.py IN: decode_integer MESSAGE: Decoded 3, consumed 1 bytes
+2024-05-04 19:08:48,708 FILE: hpack.py IN: decode_integer MESSAGE: Decoded 47, consumed 1 bytes
+2024-05-04 19:08:48,708 FILE: hpack.py IN: _decode_literal MESSAGE: Decoded (<memory at 0x0000018295D0EBC0>, b'CP="This is not a P3P policy! See g.co/p3phelp for more info."'), total consumed 53 bytes, indexed True
+2024-05-04 19:08:48,708 FILE: hpack.py IN: decode_integer MESSAGE: Decoded 18, consumed 1 bytes
+2024-05-04 19:08:48,708 FILE: hpack.py IN: decode_integer MESSAGE: Decoded 17, consumed 1 bytes
+2024-05-04 19:08:48,708 FILE: hpack.py IN: _decode_literal MESSAGE: Decoded (b'cross-origin-opener-policy', b'same-origin-allow-popups'), total consumed 38 bytes, indexed True
+2024-05-04 19:08:48,708 FILE: hpack.py IN: decode_integer MESSAGE: Decoded 13, consumed 1 bytes
+2024-05-04 19:08:48,708 FILE: hpack.py IN: decode_integer MESSAGE: Decoded 128, consumed 2 bytes
+2024-05-04 19:08:48,708 FILE: hpack.py IN: _decode_literal MESSAGE: Decoded (b'permissions-policy', b'ch-ua-arch=*, ch-ua-bitness=*, ch-ua-full-version=*, ch-ua-full-version-list=*, ch-ua-model=*, ch-ua-wow64=*, ch-ua-form-factor=*, ch-ua-platform=*, ch-ua-platform-version=*'), total consumed 145 bytes, indexed True
+2024-05-04 19:08:48,708 FILE: hpack.py IN: decode_integer MESSAGE: Decoded 16, consumed 1 bytes
+2024-05-04 19:08:48,708 FILE: hpack.py IN: decode_integer MESSAGE: Decoded 58, consumed 1 bytes
+2024-05-04 19:08:48,708 FILE: hpack.py IN: _decode_literal MESSAGE: Decoded (b'content-security-policy', b"require-trusted-types-for 'script';report-uri /_/TranslateWebserverUi/cspreport"), total consumed 77 bytes, indexed True
+2024-05-04 19:08:48,708 FILE: hpack.py IN: decode_integer MESSAGE: Decoded 20, consumed 1 bytes
+2024-05-04 19:08:48,708 FILE: hpack.py IN: decode_integer MESSAGE: Decoded 6, consumed 1 bytes
+2024-05-04 19:08:48,708 FILE: hpack.py IN: _decode_literal MESSAGE: Decoded (b'cross-origin-resource-policy', b'same-site'), total consumed 29 bytes, indexed True
+2024-05-04 19:08:48,708 FILE: hpack.py IN: decode_integer MESSAGE: Decoded 6, consumed 1 bytes
+2024-05-04 19:08:48,708 FILE: hpack.py IN: decode_integer MESSAGE: Decoded 145, consumed 2 bytes
+2024-05-04 19:08:48,709 FILE: hpack.py IN: _decode_literal MESSAGE: Decoded (b'accept-ch', b'Sec-CH-UA-Arch, Sec-CH-UA-Bitness, Sec-CH-UA-Full-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Model, Sec-CH-UA-WoW64, Sec-CH-UA-Form-Factor, Sec-CH-UA-Platform, Sec-CH-UA-Platform-Version'), total consumed 155 bytes, indexed True
+2024-05-04 19:08:48,709 FILE: hpack.py IN: decode_integer MESSAGE: Decoded 54, consumed 1 bytes
+2024-05-04 19:08:48,709 FILE: hpack.py IN: decode_integer MESSAGE: Decoded 3, consumed 1 bytes
+2024-05-04 19:08:48,709 FILE: hpack.py IN: _decode_literal MESSAGE: Decoded (b'server', <memory at 0x0000018295D0EA40>), total consumed 5 bytes, indexed True
+2024-05-04 19:08:48,709 FILE: hpack.py IN: decode_integer MESSAGE: Decoded 12, consumed 1 bytes
+2024-05-04 19:08:48,709 FILE: hpack.py IN: decode_integer MESSAGE: Decoded 1, consumed 1 bytes
+2024-05-04 19:08:48,709 FILE: hpack.py IN: _decode_literal MESSAGE: Decoded (b'x-xss-protection', <memory at 0x0000018295D0E740>), total consumed 16 bytes, indexed True
+2024-05-04 19:08:48,709 FILE: hpack.py IN: decode_integer MESSAGE: Decoded 11, consumed 1 bytes
+2024-05-04 19:08:48,709 FILE: hpack.py IN: decode_integer MESSAGE: Decoded 9, consumed 1 bytes
+2024-05-04 19:08:48,709 FILE: hpack.py IN: _decode_literal MESSAGE: Decoded (b'x-frame-options', b'SAMEORIGIN'), total consumed 23 bytes, indexed True
+2024-05-04 19:08:48,709 FILE: hpack.py IN: decode_integer MESSAGE: Decoded 55, consumed 2 bytes
+2024-05-04 19:08:48,709 FILE: hpack.py IN: decode_integer MESSAGE: Decoded 201, consumed 2 bytes
+2024-05-04 19:08:48,709 FILE: hpack.py IN: _decode_literal MESSAGE: Decoded (b'set-cookie', b'NID=513=bd4Kt-3j8wEgD4JIv1ur5ZNZjFYppjR_IhjeAwzBMBx_VE7Xfy5ntBTUYleoKxF48UWtxTtJDxvIUUUpaeTPe00fOasEF1rCSsLY7Y54JX49T2aDT6s8M_Qd5RiEUmIvIlM6xXWKOH_9BTrJS72zpDM4mdizLgcJt1i_dGP0KQQ; expires=Sun, 03-Nov-2024 16:08:47 GMT; path=/; domain=.google.com; HttpOnly'), total consumed 205 bytes, indexed False
+2024-05-04 19:08:48,709 FILE: hpack.py IN: decode_integer MESSAGE: Decoded 5, consumed 1 bytes
+2024-05-04 19:08:48,709 FILE: hpack.py IN: decode_integer MESSAGE: Decoded 36, consumed 1 bytes
+2024-05-04 19:08:48,709 FILE: hpack.py IN: _decode_literal MESSAGE: Decoded (b'alt-svc', b'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'), total consumed 44 bytes, indexed True
+2024-05-04 19:08:48,709 FILE: hpack.py IN: decode_integer MESSAGE: Decoded 18, consumed 1 bytes
+2024-05-04 19:08:48,709 FILE: hpack.py IN: decode_integer MESSAGE: Decoded 3, consumed 1 bytes
+2024-05-04 19:08:48,709 FILE: hpack.py IN: _decode_literal MESSAGE: Decoded (b'accept-ranges', b'none'), total consumed 5 bytes, indexed True
+2024-05-04 19:08:48,709 FILE: hpack.py IN: decode_integer MESSAGE: Decoded 59, consumed 1 bytes
+2024-05-04 19:08:48,709 FILE: hpack.py IN: decode_integer MESSAGE: Decoded 45, consumed 1 bytes
+2024-05-04 19:08:48,709 FILE: hpack.py IN: _decode_literal MESSAGE: Decoded (b'vary', b'Sec-Fetch-Dest, Sec-Fetch-Mode, Sec-Fetch-Site,Accept-Encoding'), total consumed 47 bytes, indexed True
+2024-05-04 19:08:48,710 FILE: _client.py IN: send_single_request MESSAGE: HTTP Request: POST https://translate.google.com/_/TranslateWebserverUi/data/batchexecute?rpcids=MkEWBc&bl=boq_translate-webserver_20201207.13_p0&soc-app=1&soc-platform=1&soc-device=1&rt=c "HTTP/2 200 OK"
+2024-05-04 19:08:48,712 FILE: connectionpool.py IN: _new_conn MESSAGE: Starting new HTTPS connection (1): api.telegram.org:443
+2024-05-04 19:08:49,352 FILE: connectionpool.py IN: _make_request MESSAGE: https://api.telegram.org:443 "POST /bot6477745890:AAF_w2lcFKp4COkkJasYBtOFACU0ZH72HGE/sendMessage?chat_id=1752643398&text=Ready%21Now+send+a+voice+message+or+text+for+communication+with+GPT&reply_markup=%7B%22remove_keyboard%22%3A+true%7D HTTP/1.1" 200 334
+2024-05-04 19:09:07,382 FILE: connectionpool.py IN: _make_request MESSAGE: https://api.telegram.org:443 "GET /bot6477745890:AAF_w2lcFKp4COkkJasYBtOFACU0ZH72HGE/getUpdates?offset=467934120&timeout=20 HTTP/1.1" 200 23
+2024-05-04 19:09:27,476 FILE: connectionpool.py IN: _make_request MESSAGE: https://api.telegram.org:443 "GET /bot6477745890:AAF_w2lcFKp4COkkJasYBtOFACU0ZH72HGE/getUpdates?offset=467934120&timeout=20 HTTP/1.1" 200 23
+2024-05-04 19:09:47,568 FILE: connectionpool.py IN: _make_request MESSAGE: https://api.telegram.org:443 "GET /bot6477745890:AAF_w2lcFKp4COkkJasYBtOFACU0ZH72HGE/getUpdates?offset=467934120&timeout=20 HTTP/1.1" 200 23
+2024-05-04 19:10:04,552 FILE: connectionpool.py IN: _make_request MESSAGE: https://api.telegram.org:443 "GET /bot6477745890:AAF_w2lcFKp4COkkJasYBtOFACU0ZH72HGE/getUpdates?offset=467934120&timeout=20 HTTP/1.1" 200 400
+2024-05-04 19:10:04,553 FILE: usersdb.py IN: create_database_users MESSAGE: DATABASE: База данных создана
+2024-05-04 19:10:04,553 FILE: Bot.py IN: start MESSAGE: Обнаружение нового пользователя
+2024-05-04 19:10:04,720 FILE: connectionpool.py IN: _make_request MESSAGE: https://api.telegram.org:443 "POST /bot6477745890:AAF_w2lcFKp4COkkJasYBtOFACU0ZH72HGE/sendMessage?chat_id=1752643398&text=Choose+the+language&reply_markup=%7B%22keyboard%22%3A+%5B%5B%7B%22text%22%3A+%22English%22%7D%5D%2C+%5B%7B%22text%22%3A+%22O%27zbek+tili%22%7D%5D%2C+%5B%7B%22text%22%3A+%22%5Cu0420%5Cu0443%5Cu0441%5Cu0441%5Cu043a%5Cu0438%5Cu0439%22%7D%5D%2C+%5B%7B%22text%22%3A+%22%5Cu049a%5Cu0430%5Cu0437%5Cu0430%5Cu049b%5Cu0448%5Cu0430%22%7D%5D%2C+%5B%7B%22text%22%3A+%22Deutsch%22%7D%5D%2C+%5B%7B%22text%22%3A+%22%5Cu05e2%5Cu05d1%5Cu05e8%5Cu05d9%5Cu05ea%22%7D%5D%5D%2C+%22resize_keyboard%22%3A+true%7D HTTP/1.1" 200 288
+2024-05-04 19:10:06,791 FILE: connectionpool.py IN: _make_request MESSAGE: https://api.telegram.org:443 "GET /bot6477745890:AAF_w2lcFKp4COkkJasYBtOFACU0ZH72HGE/getUpdates?offset=467934121&timeout=20 HTTP/1.1" 200 347
+2024-05-04 19:10:06,791 FILE: Bot.py IN: get_lang MESSAGE: Обновлен язык
+2024-05-04 19:10:07,273 FILE: hpack.py IN: encode MESSAGE: HPACK encoding <generator object _check_path_header.<locals>.inner at 0x0000018295D7E500>
+2024-05-04 19:10:07,273 FILE: hpack.py IN: add MESSAGE: Adding (b':method', b'POST') to the header table
+2024-05-04 19:10:07,273 FILE: hpack.py IN: encode_integer MESSAGE: Encoding 3 with 7 bits
+2024-05-04 19:10:07,273 FILE: hpack.py IN: add MESSAGE: Adding (b':authority', b'translate.google.com') to the header table
+2024-05-04 19:10:07,273 FILE: hpack.py IN: encode_integer MESSAGE: Encoding 1 with 6 bits
+2024-05-04 19:10:07,273 FILE: hpack.py IN: encode_integer MESSAGE: Encoding 14 with 7 bits
+2024-05-04 19:10:07,273 FILE: hpack.py IN: add MESSAGE: Adding (b':scheme', b'https') to the header table
+2024-05-04 19:10:07,273 FILE: hpack.py IN: encode_integer MESSAGE: Encoding 7 with 7 bits
+2024-05-04 19:10:07,273 FILE: hpack.py IN: add MESSAGE: Adding (b':path', b'/_/TranslateWebserverUi/data/batchexecute?rpcids=MkEWBc&bl=boq_translate-webserver_20201207.13_p0&soc-app=1&soc-platform=1&soc-device=1&rt=c') to the header table
+2024-05-04 19:10:07,273 FILE: hpack.py IN: encode_integer MESSAGE: Encoding 4 with 6 bits
+2024-05-04 19:10:07,273 FILE: hpack.py IN: encode_integer MESSAGE: Encoding 101 with 7 bits
+2024-05-04 19:10:07,273 FILE: hpack.py IN: add MESSAGE: Adding (b'accept', b'*/*') to the header table
+2024-05-04 19:10:07,273 FILE: hpack.py IN: encode_integer MESSAGE: Encoding 19 with 6 bits
+2024-05-04 19:10:07,273 FILE: hpack.py IN: encode_integer MESSAGE: Encoding 3 with 7 bits
+2024-05-04 19:10:07,273 FILE: hpack.py IN: add MESSAGE: Adding (b'accept-encoding', b'gzip, deflate') to the header table
+2024-05-04 19:10:07,273 FILE: hpack.py IN: encode_integer MESSAGE: Encoding 16 with 7 bits
+2024-05-04 19:10:07,274 FILE: hpack.py IN: add MESSAGE: Adding (b'user-agent', b'Mozilla/5.0 (Windows NT 10.0; Win64; x64)') to the header table
+2024-05-04 19:10:07,274 FILE: hpack.py IN: encode_integer MESSAGE: Encoding 58 with 6 bits
+2024-05-04 19:10:07,274 FILE: hpack.py IN: encode_integer MESSAGE: Encoding 32 with 7 bits
+2024-05-04 19:10:07,274 FILE: hpack.py IN: add MESSAGE: Adding (b'referer', b'https://translate.google.com') to the header table
+2024-05-04 19:10:07,274 FILE: hpack.py IN: encode_integer MESSAGE: Encoding 51 with 6 bits
+2024-05-04 19:10:07,274 FILE: hpack.py IN: encode_integer MESSAGE: Encoding 20 with 7 bits
+2024-05-04 19:10:07,274 FILE: hpack.py IN: add MESSAGE: Adding (b'content-length', b'585') to the header table
+2024-05-04 19:10:07,274 FILE: hpack.py IN: encode_integer MESSAGE: Encoding 28 with 6 bits
+2024-05-04 19:10:07,274 FILE: hpack.py IN: encode_integer MESSAGE: Encoding 3 with 7 bits
+2024-05-04 19:10:07,274 FILE: hpack.py IN: add MESSAGE: Adding (b'content-type', b'application/x-www-form-urlencoded') to the header table
+2024-05-04 19:10:07,274 FILE: hpack.py IN: encode_integer MESSAGE: Encoding 31 with 6 bits
+2024-05-04 19:10:07,274 FILE: hpack.py IN: encode_integer MESSAGE: Encoding 24 with 7 bits
+2024-05-04 19:10:07,274 FILE: hpack.py IN: encode MESSAGE: Encoded header block to b"\x83A\x8eM\x83\xa9\x14\r%^c\x9ej\n\xb9\x0fO\x87D\xe5b&7\xd8:\x91@\xd2^E\x8d\x05\xb3\xb9l\xe0f$\x1aF\xc4cI'/\x92\x92\xd4\x97\xfc\xb2\xb2\x1aDA\xa3\xae\x0eWI\xf1\x1d\x10F~\xd1&\xc1\xd4\x8a\x06\x92\xad\xe0\xb1\xa0\xb6w-\x91\x08\x02\x00D\x07W\x0b1V\x0f\x84\x1c\x8b\x0e\xba\xe0\x0f\xc2\x0eE\xab\xa0i\x94\xf6S\x00~\x10r-!{\x98\x85\x80?\x16&\x02\x7fS\x83\xf9c\xe7\x90z\xa0\xd0\x7ff\xa2\x81\xb0\xda\xe0S\xfa\xe4j\xa4?\x84)\xa7z\x81\x02\xe0\xfbS\x91\xaaq\xaf\xb5<\xb8\xd7\xf7s\x94\x9d)\xad\x17\x18a6\x0e\xa4P4\x95y\x8ey\xa8*\xe4=?\\\x83m\xe6\xff_\x98\x1du\xd0b\r&=Ly[\xc7\x8f\x0bJ{)Z\xdb(-D<\x85\x93"
+2024-05-04 19:10:07,437 FILE: hpack.py IN: decode MESSAGE: Decoding b'\x88_\x96\x1du\xd0b\r&=LtA\xea\xfbP\x93\x8e\xc4\x150Z\x99V{X\xa1\xa8\xeb\x10d\x9c\xbfJTu\x90\x93\xd8_\xa5)\x1f\x95\x871`\x07\xd2\x94\xda\x84\xada{\x8e\x83H4\x97@\x85\xae\xc1\xcdH\xff\x86\xa8\xeb\x10d\x9c\xbfd\x96\xd0z\xbe\x94\x00T\xca:\x94\x0b\xef\x81@\x02\xe0\x01p\x00S\x16\x8d\xff\x0f\x12\x96\xdc4\xfd(\x06\x94\xd0?J\x08\x02i@\xb9p \xb8\x07T\xc5\xa3\x7fY\xb2\x1aR2OIjO\xda\x92\x9a\x82\xd4:K\x07\xf3aQY\xeaAW\x8c\xd5\x7f?jJj\x0bP\xe9/\xcc\x1c7\xe1Y\xef\xf5\xfe\xac*+=H*\xf1\x9a\xaf@\x90\xf2\xb1\x0fRKRVO\xaa\xca\xb1\xebI\x8fR?\x85\xa8\xe8\xa8\xd2\xcb@\x03p3p\xaf\xbd\xae\x0f\xe7|\xe6B\x86B\x95\x1d*\rMl\xebR\xb3\xd0bz\xfe\x14\xdcR\xa92\xe4;\x15\xb3\\\xe5\xa2\xb5%=\x8aR{\n\xa1\xaa\x94\xeb\xff?@\x94%\x87B\x16=\x86\x98\xd5-aP{l!V\xac\xf4\x18\x9e\xbf\x86@\xe9*\xc82K@\x86\x19\x08Z\xd2\xb1\'\xff\x12\xdcR-{\x1a\xdc!Z\x1b\t?\xd2\x9b\x8aE\xafc[\x84+]2j*\x11\xf4\xa6\xe2\x91k\xd8\xd6\xe1\n\xd8m\xa2\x85\xb8\x96\xc4\x18\xf5})\xb8\xa4Z\xf65\xb8B\xb6\x1bh\xa1n%\xb1\x06=Kg2\x13\xf4\xa6\xe2\x91k\xd8\xd6\xe1\n\xda\x0f!h\xfaSqH\xb5\xeckp\x85nG\xe4\xe3_Jn)\x16\xbd\x8dn\x10\xad\x84\xf6R\xb6\x11\x91\'\xb3\xe9M\xc5"\xd7\xb1\xad\xc2\x15\xb5\xd04\xca{)\xfaSqH\xb5\xeckp\x85mt\r2\x9e\xcaV\xe2[\x10c\xd5@\x92%\x87B\x16=\x86\x98\xd5,z\xcbQlZ\xb3\xd0bz\x91@\xe9*\xc7\xb0\xd3\x1a\xa5\x87E\x07\xf0\xb5g\xae\xda\xd1@\x8d\xac\xb6Rd \xc7\xa9\x0bVz\x0cO_\xff\x01$\xebZ5\x87a\'\x83\xe7\xe9BN\xb5\xa3Z3&\xa2\xa1\x10|\xfd(I\xd6\xb4kKm\x14-\xdc\xb6 \xc7\xaa\x0f\x9f\xa5\t:\xd6\x8dim\xa2\x85\xbb\x96\xc4\x18\xf5-A\x90\x98>~\x94$\xebZ5\xa9<\x85\xa2\x0f\x9f\xa5\t:\xd6\x8do\x07\xf0\xe3P|\xfd(I\xd6\xb4kJ{)ZQ\x91\'\xb2\x0f\x9f\xa5\t:\xd6\x8dj\xe8\x1ae=\x94\xc1\xf3\xf4\xa1\'Z\xd1\xad]\x03L\xa7\xb2\x95\xbb\x96\xc4\x18\xf5A\xf3@\x90!\xeaIjJ\xc8)-\xb0\xc9\xf4\xb5g\xa0\xc4\xf5\xba\xb0\xbd\xad5\x85Y6Z\x84\x96E\x93\xea\xb2\xa1iOb\x9f\xe9\x04\xb0\xd5\xa7\xfd}\xd8Z\xcfbV\xb6\xc3(\xc4Lo\xb0u"\x81\xa4\xbc\x8b\x1a\x0bgr\xd9\xc0\xcc\x11\x15\xd8Z\xcfb\x7fv\x03ESF@\x8c\xf2\xb7\x94!j\xec:JD\x98\xf5\x7f\x010@\x8b\xf2\xb4\xb6\x0e\x92\xacz\xd2c\xd4\x8f\x89\xdd\x0e\x8c\x1a\xb6\xe4\xc5\x93O\x0f(\xffH\xd3\x92\xfc\r\x85\x98\r\x96\xacA\xab\x8c\xbe}\x0b[\xb87z\xf6\x8d\x82\xbd\xac\xe7g\xb8\xf4\xeb\xe5\xbe%\xb0\xc7vjzj\xb38\xf8\xf1\xe3\xba\xc8\x96\xaa\xebK~\xc9{\x05{\xa4\xab\x06>\xb0\xb9w\x17\xb1\xf75\x8d\'\xf5\xd8\xb0\xc3K\x95\xea4(\x9fd\xfe}\x9b7B\xe2q\xbfy\xbddi\xbe\x1c\xb8r\x0fP\xc3\x97\x9b\xf7\xbd,:\xa9\x87ow\x82\x191:^\xd4\x8f\x93\xd2t\xdc\n{td\xde+k\xc00\xfa[/\xa1\xe5\xe5\rG\xde\x0cd\xbe)\x81\xf6\xa1|\xd6k\n\x887[W\xd2\x80em\'\xee\xb0\x80&\x94\x0b\x97\x02\x0b\x80uLZ7\xfd\xa9X\xd3<\x0c}\xa9!\xe9\x19\xaa\x81y\x8ey\xa8*\xe4=?jcJk\xd5U\x1e\xbf@\x85\x1d\tY\x1d\xc9\xa4\x9d\x98?\x9b\x8d4\xcf\xf3\xf6\xa5#\x80M\xbe \x00\x1fS\xb2\xb0\x9f\x83\xf9\xb8\xd3L\xff?jR8\x04\xdb\xe2\x00\x01R\x83\xa8\xf5\x17{\xad\xdcR-\x84\xa9$\xeb_*\x13\xf4\xa6\xe2\x91l%I\'[A\xe4/\xd2\x9b\x8aE\xb0\x95$\x9dm\xc6I~\xa1!\x0bZV\xc1Q\x0f!\xaa\x9b'
+2024-05-04 19:10:07,437 FILE: hpack.py IN: decode_integer MESSAGE: Decoded 8, consumed 1 bytes
+2024-05-04 19:10:07,437 FILE: hpack.py IN: _decode_indexed MESSAGE: Decoded (b':status', b'200'), consumed 1
+2024-05-04 19:10:07,437 FILE: hpack.py IN: decode_integer MESSAGE: Decoded 31, consumed 1 bytes
+2024-05-04 19:10:07,437 FILE: hpack.py IN: decode_integer MESSAGE: Decoded 22, consumed 1 bytes
+2024-05-04 19:10:07,437 FILE: hpack.py IN: _decode_literal MESSAGE: Decoded (b'content-type', b'application/json; charset=utf-8'), total consumed 24 bytes, indexed True
+2024-05-04 19:10:07,437 FILE: hpack.py IN: decode_integer MESSAGE: Decoded 24, consumed 1 bytes
+2024-05-04 19:10:07,437 FILE: hpack.py IN: decode_integer MESSAGE: Decoded 33, consumed 1 bytes
+2024-05-04 19:10:07,437 FILE: hpack.py IN: _decode_literal MESSAGE: Decoded (b'cache-control', b'no-cache, no-store, max-age=0, must-revalidate'), total consumed 35 bytes, indexed True
+2024-05-04 19:10:07,437 FILE: hpack.py IN: decode_integer MESSAGE: Decoded 5, consumed 1 bytes
+2024-05-04 19:10:07,437 FILE: hpack.py IN: decode_integer MESSAGE: Decoded 6, consumed 1 bytes
+2024-05-04 19:10:07,437 FILE: hpack.py IN: _decode_literal MESSAGE: Decoded (b'pragma', b'no-cache'), total consumed 14 bytes, indexed True
+2024-05-04 19:10:07,437 FILE: hpack.py IN: decode_integer MESSAGE: Decoded 36, consumed 1 bytes
+2024-05-04 19:10:07,437 FILE: hpack.py IN: decode_integer MESSAGE: Decoded 22, consumed 1 bytes
+2024-05-04 19:10:07,437 FILE: hpack.py IN: _decode_literal MESSAGE: Decoded (b'expires', b'Mon, 01 Jan 1990 00:00:00 GMT'), total consumed 24 bytes, indexed True
+2024-05-04 19:10:07,437 FILE: hpack.py IN: decode_integer MESSAGE: Decoded 33, consumed 2 bytes
+2024-05-04 19:10:07,437 FILE: hpack.py IN: decode_integer MESSAGE: Decoded 22, consumed 1 bytes
+2024-05-04 19:10:07,437 FILE: hpack.py IN: _decode_literal MESSAGE: Decoded (b'date', b'Sat, 04 May 2024 16:10:07 GMT'), total consumed 25 bytes, indexed False
+2024-05-04 19:10:07,437 FILE: hpack.py IN: decode_integer MESSAGE: Decoded 25, consumed 1 bytes
+2024-05-04 19:10:07,437 FILE: hpack.py IN: decode_integer MESSAGE: Decoded 50, consumed 1 bytes
+2024-05-04 19:10:07,437 FILE: hpack.py IN: _decode_literal MESSAGE: Decoded (b'content-disposition', b'attachment; filename="response.bin"; filename*=UTF-8\'\'response.bin'), total consumed 52 bytes, indexed True
+2024-05-04 19:10:07,438 FILE: hpack.py IN: decode_integer MESSAGE: Decoded 16, consumed 1 bytes
+2024-05-04 19:10:07,438 FILE: hpack.py IN: decode_integer MESSAGE: Decoded 5, consumed 1 bytes
+2024-05-04 19:10:07,438 FILE: hpack.py IN: _decode_literal MESSAGE: Decoded (b'x-content-type-options', b'nosniff'), total consumed 24 bytes, indexed True
+2024-05-04 19:10:07,438 FILE: hpack.py IN: decode_integer MESSAGE: Decoded 3, consumed 1 bytes
+2024-05-04 19:10:07,438 FILE: hpack.py IN: decode_integer MESSAGE: Decoded 47, consumed 1 bytes
+2024-05-04 19:10:07,438 FILE: hpack.py IN: _decode_literal MESSAGE: Decoded (<memory at 0x0000018295D0E980>, b'CP="This is not a P3P policy! See g.co/p3phelp for more info."'), total consumed 53 bytes, indexed True
+2024-05-04 19:10:07,438 FILE: hpack.py IN: decode_integer MESSAGE: Decoded 20, consumed 1 bytes
+2024-05-04 19:10:07,438 FILE: hpack.py IN: decode_integer MESSAGE: Decoded 6, consumed 1 bytes
+2024-05-04 19:10:07,438 FILE: hpack.py IN: _decode_literal MESSAGE: Decoded (b'cross-origin-resource-policy', b'same-site'), total consumed 29 bytes, indexed True
+2024-05-04 19:10:07,438 FILE: hpack.py IN: decode_integer MESSAGE: Decoded 6, consumed 1 bytes
+2024-05-04 19:10:07,438 FILE: hpack.py IN: decode_integer MESSAGE: Decoded 145, consumed 2 bytes
+2024-05-04 19:10:07,438 FILE: hpack.py IN: _decode_literal MESSAGE: Decoded (b'accept-ch', b'Sec-CH-UA-Arch, Sec-CH-UA-Bitness, Sec-CH-UA-Full-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Model, Sec-CH-UA-WoW64, Sec-CH-UA-Form-Factor, Sec-CH-UA-Platform, Sec-CH-UA-Platform-Version'), total consumed 155 bytes, indexed True
+2024-05-04 19:10:07,438 FILE: hpack.py IN: decode_integer MESSAGE: Decoded 18, consumed 1 bytes
+2024-05-04 19:10:07,438 FILE: hpack.py IN: decode_integer MESSAGE: Decoded 17, consumed 1 bytes
+2024-05-04 19:10:07,438 FILE: hpack.py IN: _decode_literal MESSAGE: Decoded (b'cross-origin-opener-policy', b'same-origin-allow-popups'), total consumed 38 bytes, indexed True
+2024-05-04 19:10:07,438 FILE: hpack.py IN: decode_integer MESSAGE: Decoded 13, consumed 1 bytes
+2024-05-04 19:10:07,438 FILE: hpack.py IN: decode_integer MESSAGE: Decoded 128, consumed 2 bytes
+2024-05-04 19:10:07,438 FILE: hpack.py IN: _decode_literal MESSAGE: Decoded (b'permissions-policy', b'ch-ua-arch=*, ch-ua-bitness=*, ch-ua-full-version=*, ch-ua-full-version-list=*, ch-ua-model=*, ch-ua-wow64=*, ch-ua-form-factor=*, ch-ua-platform=*, ch-ua-platform-version=*'), total consumed 145 bytes, indexed True
+2024-05-04 19:10:07,438 FILE: hpack.py IN: decode_integer MESSAGE: Decoded 16, consumed 1 bytes
+2024-05-04 19:10:07,438 FILE: hpack.py IN: decode_integer MESSAGE: Decoded 58, consumed 1 bytes
+2024-05-04 19:10:07,438 FILE: hpack.py IN: _decode_literal MESSAGE: Decoded (b'content-security-policy', b"require-trusted-types-for 'script';report-uri /_/TranslateWebserverUi/cspreport"), total consumed 77 bytes, indexed True
+2024-05-04 19:10:07,438 FILE: hpack.py IN: decode_integer MESSAGE: Decoded 54, consumed 1 bytes
+2024-05-04 19:10:07,438 FILE: hpack.py IN: decode_integer MESSAGE: Decoded 3, consumed 1 bytes
+2024-05-04 19:10:07,438 FILE: hpack.py IN: _decode_literal MESSAGE: Decoded (b'server', <memory at 0x0000018295D0E800>), total consumed 5 bytes, indexed True
+2024-05-04 19:10:07,438 FILE: hpack.py IN: decode_integer MESSAGE: Decoded 12, consumed 1 bytes
+2024-05-04 19:10:07,439 FILE: hpack.py IN: decode_integer MESSAGE: Decoded 1, consumed 1 bytes
+2024-05-04 19:10:07,439 FILE: hpack.py IN: _decode_literal MESSAGE: Decoded (b'x-xss-protection', <memory at 0x0000018295D0E8C0>), total consumed 16 bytes, indexed True
+2024-05-04 19:10:07,439 FILE: hpack.py IN: decode_integer MESSAGE: Decoded 11, consumed 1 bytes
+2024-05-04 19:10:07,439 FILE: hpack.py IN: decode_integer MESSAGE: Decoded 9, consumed 1 bytes
+2024-05-04 19:10:07,439 FILE: hpack.py IN: _decode_literal MESSAGE: Decoded (b'x-frame-options', b'SAMEORIGIN'), total consumed 23 bytes, indexed True
+2024-05-04 19:10:07,439 FILE: hpack.py IN: decode_integer MESSAGE: Decoded 55, consumed 2 bytes
+2024-05-04 19:10:07,439 FILE: hpack.py IN: decode_integer MESSAGE: Decoded 199, consumed 2 bytes
+2024-05-04 19:10:07,439 FILE: hpack.py IN: _decode_literal MESSAGE: Decoded (b'set-cookie', b'NID=513=iJnG1nVfxy2P7ESyzsQ2CPoo3vaNPWT_-FbBgmjOrLaVVVSr_-nB4-ZdCEpSdnEHkA6BGzavir4tZ7_FAm6pOiAshQhxziKjeG65zKyI45UWUW1k1AJY9Cy-anmARv811dG7eqmaW8djS0mqj3iwp4w0Fy-JyaJWAnoT0HcD2g0; expires=Sun, 03-Nov-2024 16:10:07 GMT; path=/; domain=.google.com; HttpOnly'), total consumed 203 bytes, indexed False
+2024-05-04 19:10:07,439 FILE: hpack.py IN: decode_integer MESSAGE: Decoded 5, consumed 1 bytes
+2024-05-04 19:10:07,439 FILE: hpack.py IN: decode_integer MESSAGE: Decoded 36, consumed 1 bytes
+2024-05-04 19:10:07,439 FILE: hpack.py IN: _decode_literal MESSAGE: Decoded (b'alt-svc', b'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000'), total consumed 44 bytes, indexed True
+2024-05-04 19:10:07,439 FILE: hpack.py IN: decode_integer MESSAGE: Decoded 18, consumed 1 bytes
+2024-05-04 19:10:07,439 FILE: hpack.py IN: decode_integer MESSAGE: Decoded 3, consumed 1 bytes
+2024-05-04 19:10:07,439 FILE: hpack.py IN: _decode_literal MESSAGE: Decoded (b'accept-ranges', b'none'), total consumed 5 bytes, indexed True
+2024-05-04 19:10:07,439 FILE: hpack.py IN: decode_integer MESSAGE: Decoded 59, consumed 1 bytes
+2024-05-04 19:10:07,439 FILE: hpack.py IN: decode_integer MESSAGE: Decoded 45, consumed 1 bytes
+2024-05-04 19:10:07,439 FILE: hpack.py IN: _decode_literal MESSAGE: Decoded (b'vary', b'Sec-Fetch-Dest, Sec-Fetch-Mode, Sec-Fetch-Site,Accept-Encoding'), total consumed 47 bytes, indexed True
+2024-05-04 19:10:07,439 FILE: _client.py IN: send_single_request MESSAGE: HTTP Request: POST https://translate.google.com/_/TranslateWebserverUi/data/batchexecute?rpcids=MkEWBc&bl=boq_translate-webserver_20201207.13_p0&soc-app=1&soc-platform=1&soc-device=1&rt=c "HTTP/2 200 OK"
+2024-05-04 19:10:07,659 FILE: connectionpool.py IN: _make_request MESSAGE: https://api.telegram.org:443 "POST /bot6477745890:AAF_w2lcFKp4COkkJasYBtOFACU0ZH72HGE/sendMessage?chat_id=1752643398&text=Tanlangan+GPT+modelini+tanlang&reply_markup=%7B%22keyboard%22%3A+%5B%5B%7B%22text%22%3A+%22Audio%22%7D%5D%2C+%5B%7B%22text%22%3A+%22Text%22%7D%5D%5D%2C+%22resize_keyboard%22%3A+true%7D HTTP/1.1" 200 299
+2024-05-04 19:10:11,502 FILE: connectionpool.py IN: _make_request MESSAGE: https://api.telegram.org:443 "GET /bot6477745890:AAF_w2lcFKp4COkkJasYBtOFACU0ZH72HGE/getUpdates?offset=467934122&timeout=20 HTTP/1.1" 200 341
