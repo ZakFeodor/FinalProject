@@ -1,6 +1,5 @@
 import telebot
 from telebot.types import ReplyKeyboardRemove, ReplyKeyboardMarkup, KeyboardButton, InlineKeyboardButton
-import logging
 from validations import *
 from messagesdb import *
 from usersdb import *
@@ -20,8 +19,10 @@ def send_message(id, text):
     bot.send_message(id, text)
 
 
+iam_token, folder_id = get_creds()
+
+
 def count_tokens(text):
-    iam_token, folder_id = get_creds()
     headers = {
         'Authorization': f'Bearer {iam_token}',
         'Content-Type': 'application/json'
