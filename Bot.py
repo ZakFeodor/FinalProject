@@ -1,6 +1,4 @@
 import telebot
-import json
-import time
 from telebot.types import ReplyKeyboardRemove, ReplyKeyboardMarkup, KeyboardButton, InlineKeyboardButton
 import logging
 from validations import *
@@ -10,7 +8,7 @@ from config import *
 from gpt import *
 from Translator import *
 from Speechkit import *
-from creds import get_bot_token
+from creds import get_bot_token, get_creds
 
 bot = telebot.TeleBot(get_bot_token())
 
@@ -23,6 +21,7 @@ def send_message(id, text):
 
 
 def count_tokens(text):
+    iam_token, folder_id = get_creds()
     headers = {
         'Authorization': f'Bearer {iam_token}',
         'Content-Type': 'application/json'
