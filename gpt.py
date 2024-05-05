@@ -1,6 +1,7 @@
 import requests
-from config import folder_id, iam_token
+from creds import get_creds
 
+iam_token, folder_id = get_creds()
 
 def ask_gpt(collection):
     url = "https://llm.api.cloud.yandex.net/foundationModels/v1/completion"

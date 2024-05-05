@@ -10,13 +10,17 @@ from config import *
 from gpt import *
 from Translator import *
 from Speechkit import *
-bot = telebot.TeleBot(token=token)
+from creds import get_bot_token
+
+bot = telebot.TeleBot(get_bot_token())
 
 logging.basicConfig(filename=LOGS, level=logging.DEBUG,
                     format="%(asctime)s FILE: %(filename)s IN: %(funcName)s MESSAGE: %(message)s", filemode="w")
 
+
 def send_message(id, text):
     bot.send_message(id, text)
+
 
 def count_tokens(text):
     headers = {
@@ -152,6 +156,7 @@ def forming_response(message):
             else:
                 send_message(id, translate(tts_symbols_or_msg, language))
         return
+
 
 bot.polling()
 

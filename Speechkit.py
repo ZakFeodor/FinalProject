@@ -1,6 +1,7 @@
 import requests
-from config import *
+from creds import get_creds
 
+iam_token, folder_id = get_creds()
 
 def text_to_speech(text, lang, voice):
     headers = {
