@@ -21,7 +21,7 @@ MAX_USER_STT_BLOCKS = 25
 MAX_USER_TTS_SYMBOLS = 25000
 
 
-HOME_DIR = '/home/student/FinalProject'
+HOME_DIR = 'C:/Users/usr/PycharmProjects/home/student/FinalProject'
 LOGS = f'{HOME_DIR}/logs.txt'
 DB1_FILE = f'{HOME_DIR}/messages.sqlite'
 DB2_FILE = f'{HOME_DIR}/users.sqlite'

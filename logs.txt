@@ -1,0 +1,2 @@
+2024-05-05 13:09:08,618 FILE: connectionpool.py IN: _new_conn MESSAGE: Starting new HTTP connection (1): 169.254.169.254:80
+2024-05-05 13:09:29,662 FILE: creds.py IN: create_new_token MESSAGE: Ошибка получения iam_token: HTTPConnectionPool(host='169.254.169.254', port=80): Max retries exceeded with url: /computeMetadata/v1/instance/service-accounts/default/token (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x000001D7C22E6A50>, 'Connection to 169.254.169.254 timed out. (connect timeout=None)'))

@@ -41,7 +41,7 @@ def get_creds():
         file_data = json.load(f)
         iam_token = file_data["access_token"]
 
-    # чтение folder_id
+    # Чтение folder_id
     with open(FOLDER_ID_PATH, 'r') as f:
         folder_id = f.read().strip()
 
