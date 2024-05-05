@@ -61,31 +61,38 @@ def start(message):
 
 
 def get_lang(message):
-    if message.text in language_list.keys():
-        global language
-        language = language_list[message.text]
-        logging.info("Обновлен язык")
-        markup = ReplyKeyboardMarkup(resize_keyboard=True)
-        for mode in mode_list:
-            markup.add(InlineKeyboardButton(text=mode))
-        bot.send_message(id, translate('Выбери предпочитаемый формат ответов модели GPT', language), reply_markup=markup)
-        bot.register_next_step_handler(message, get_mode)
-    elif message.text not in language_list:
-        logging.warning("Ошибка идентификации при получении языка ")
-        send_message(id, 'Error! Incorrect language has been entered. Try again')
+    if message.content_type == 'text':
+        if message.text in language_list.keys():
+            global language
+            language = language_list[message.text]
+            logging.info("Обновлен язык")
+            markup = ReplyKeyboardMarkup(resize_keyboard=True)
+            for mode in mode_list:
+                markup.add(InlineKeyboardButton(text=mode))
+            bot.send_message(id, translate('Выбери предпочитаемый формат ответов модели GPT', language), reply_markup=markup)
+            bot.register_next_step_handler(message, get_mode)
+        elif message.text not in language_list:
+            logging.warning("Ошибка идентификации при получении языка ")
+            send_message(id, 'Error! Incorrect language has been entered. Try again')
+            bot.register_next_step_handler(message, get_lang)
+    else:
+        send_message(id, 'Error! Enter text')
         bot.register_next_step_handler(message, get_lang)
 def get_mode(message):
-    mode = message.text
-    if mode not in mode_list:
-        send_message(id, translate('Введен неверный режим', language))
-        bot.register_next_step_handler(message, get_mode)
-    if is_user_in_table(id):
-        update_settings(id, language, mode)
+    if message.content_type == 'text':
+        mode = message.text
+        if mode not in mode_list:
+            send_message(id, translate('Введен неверный режим', language))
+            bot.register_next_step_handler(message, get_mode)
+        if is_user_in_table(id):
+            update_settings(id, language, mode)
+        else:
+            write_settings(id, language, mode)
+        bot.send_message(id, translate('Готово! Теперь отправь голосовое сообщение или текст для общения с GPT', language),
+                         reply_markup=ReplyKeyboardRemove())
     else:
-        write_settings(id, language, mode)
-    bot.send_message(id, translate('Готово! Теперь отправь голосовое сообщение или текст для общения с GPT', language),
-                     reply_markup=ReplyKeyboardRemove())
-
+        send_message(id, 'Error! Enter text')
+        bot.register_next_step_handler(message, get_mode)
 
 @bot.message_handler(commands=['debug'])
 def send_logs(message):
@@ -101,7 +108,11 @@ def send_logs(message):
 def forming_response(message):
     create_database_messages()
     id = message.chat.id
-    readed_settings = read_settings(id)
+    try:
+        readed_settings = read_settings(id)
+    except:
+        send_message(id, 'Please enter /start before forming response')
+        return
     language, mode = readed_settings[0], readed_settings[1]
     if message.content_type == 'voice':
         file_id = message.voice.file_id
@@ -117,12 +128,10 @@ def forming_response(message):
                 return
         else:
             send_message(id, translate(stt_blocks_or_msg, language))
-    elif message.content_type == 'text':
+            return
+    else:
         gpt_response = message.text
         stt_status = 0
-    else:
-        send_message(id, translate('Отправьте аудио или текст', language))
-        return 
     response_tokens = count_tokens(gpt_response)
     collection, total_tokens = select_n_last_messages(id, 4)
     new_total_tokens = total_tokens + response_tokens + system_tokens
@@ -137,18 +146,18 @@ def forming_response(message):
     translated_answer_gpt = translate(answer_gpt, language)
     if mode == 'Text':
         send_message(id, translated_answer_gpt)
-        add_message(id, gpt_response, role='assistant', total_gpt_tokens=new_total_tokens, tts_symbols=0, stt_blocks=0)
+        add_message(id, answer_gpt, role='assistant', total_gpt_tokens=new_total_tokens, tts_symbols=0, stt_blocks=0)
     else:
         tts_status, tts_symbols_or_msg = is_tts_symbols_limit(id, translated_answer_gpt)
         if tts_status:
             success, response = text_to_speech(translated_answer_gpt, language_cods_vocabulary[language][0], language_cods_vocabulary[language][1])
             if success:
                 bot.send_voice(id, response)
-                add_message(id, gpt_response, role='assistant', total_gpt_tokens=new_total_tokens, tts_symbols=tts_symbols_or_msg, stt_blocks=0)
+                add_message(id, answer_gpt, role='assistant', total_gpt_tokens=new_total_tokens, tts_symbols=tts_symbols_or_msg, stt_blocks=0)
             else:
                 bot.send_message(id, translate(response, language))
         else:
-            add_message(id, gpt_response, role='assistant', total_gpt_tokens=new_total_tokens,
+            add_message(id, answer_gpt, role='assistant', total_gpt_tokens=new_total_tokens,
                         tts_symbols=0, stt_blocks=0)
             if language == 'iw':
                 send_message(id, 'סינתזת דיבור לא עובדת עם עברית')
@@ -156,8 +165,6 @@ def forming_response(message):
                 send_message(id, translate(tts_symbols_or_msg, language))
         return
 
-
 bot.polling()
-
 
 
